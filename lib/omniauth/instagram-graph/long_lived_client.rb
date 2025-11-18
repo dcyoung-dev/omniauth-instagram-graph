@@ -11,6 +11,7 @@ module OmniAuth
           authorize_url: nil,
           token_url: TOKEN_URL,
           token_method: :get,
+          access_token_class: LongLivedToken
         }.merge!(options)
 
         super(client_id, client_secret, options)

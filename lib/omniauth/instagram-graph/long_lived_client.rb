@@ -18,7 +18,7 @@ module OmniAuth
 
       def get_token(params = {})
         params = {grant_type: 'ig_exchange_token', client_secret: secret}.merge!(params)
-        super(params, {}, LongLivedToken)
+        super(params, {})
       end
     end
   end
